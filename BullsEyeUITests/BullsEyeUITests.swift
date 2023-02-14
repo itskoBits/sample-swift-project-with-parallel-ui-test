@@ -37,14 +37,19 @@ class BullsEyeUITests: XCTestCase {
     app = XCUIApplication()
     app.launch()
   }
-  
-  func testGameStyleSwitch() {
+
+  override func tearDown() {
+    super.tearDown()
+    app.terminate()
+  }
+
+  private func coreTestLogic() {
     // given
     let slideButton = app.segmentedControls.buttons["Slide"]
     let typeButton = app.segmentedControls.buttons["Type"]
     let slideLabel = app.staticTexts["Get as close as you can to: "]
     let typeLabel = app.staticTexts["Guess where the slider is: "]
-    
+
     // then
     if slideButton.isSelected {
       XCTAssertTrue(slideLabel.exists)
@@ -61,6 +66,122 @@ class BullsEyeUITests: XCTestCase {
       XCTAssertTrue(slideLabel.exists)
       XCTAssertFalse(typeLabel.exists)
     }
+  }
+  
+  func testGameStyleSwitch001() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch002() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch003() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch004() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch005() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch006() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch007() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch008() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch009() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch010() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch011() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch012() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch013() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch014() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch015() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch016() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch017() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch018() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch019() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch020() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch021() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch022() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch023() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch024() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch025() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch026() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch027() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch028() {
+    coreTestLogic()
+  }
+
+  func testGameStyleSwitch029() {
+    coreTestLogic()
   }
 }
 
