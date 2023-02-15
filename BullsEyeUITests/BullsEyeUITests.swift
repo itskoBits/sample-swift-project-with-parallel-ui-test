@@ -35,6 +35,7 @@ class BullsEyeUITests: XCTestCase {
     try super.setUpWithError()
     continueAfterFailure = false
     app = XCUIApplication()
+    app.activate()
     app.launch()
   }
 
